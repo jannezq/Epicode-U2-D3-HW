@@ -68,20 +68,65 @@ footer {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    max-width: 50%;
   }
   nav {
     padding-top: 1%;
-    width: 100vw;
+    width: 199%;
     height: 9vh;
   }
 
-  article h2 {
-    margin-left: 3%;
+  .inner {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  article {
+    flex-grow: 3;
   }
 
   aside {
-    width: 30%;
+    flex-grow: 1;
     color: white;
     background-color: #320388;
+  }
+}
+
+@media (max-width: 540px) {
+  body {
+    margin: 0 auto;
+    font-size: 10px;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width: 19%;
+  }
+
+  header {
+    display: flex;
+    min-width: 100%;
+    min-height: 15vh;
+    background-color: #111023;
+    color: white;
+  }
+  nav {
+    height: 9vh;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  article {
+    background-color: bisque;
+  }
+
+  aside {
+    flex-grow: 0;
   }
 }
