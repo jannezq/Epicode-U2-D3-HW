@@ -20,11 +20,11 @@ nav {
   background-color: #c22177;
 }
 
-/* .side-container {
+.side-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-} */
+}
 
 h2 {
   padding-inline: 2%;
@@ -40,12 +40,12 @@ header {
 
 .inner-container {
   display: flex;
+  flex-direction: column;
   min-height: 70vh;
+  width: calc(185vh - 20%);
 }
 
 footer {
-  display: flex;
-  width: calc(185vh - 20%);
   height: 15vh;
   margin: 0;
   padding: 0;
@@ -54,8 +54,7 @@ footer {
 }
 
 article {
-  display: flex;
-  width: calc(185vh - 20%);
+  height: calc(85vh - 15vh);
   align-content: stretch;
   margin-top: 0;
   color: #111023;
@@ -64,13 +63,11 @@ article {
 .aside-container {
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 
 aside {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
+  width: 37vh;
+  height: 100%;
   color: white;
   background-color: #320388;
 }
