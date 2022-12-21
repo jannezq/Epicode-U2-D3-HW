@@ -28,9 +28,17 @@ header {
 }
 
 nav {
+  padding-left: 1%;
   width: 15%;
   color: white;
   background-color: #c22177;
+}
+
+.inner {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
 }
 
 article {
@@ -38,9 +46,13 @@ article {
 }
 
 aside {
-  width: 15%;
+  width: 17%;
   color: white;
   background-color: #320388;
+}
+
+aside h2 {
+  padding-left: 10%;
 }
 
 footer {
@@ -49,4 +61,25 @@ footer {
   display: flex;
   background-color: #111023;
   color: white;
+}
+
+@media (max-width: 820px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  nav {
+    flex-grow: 1;
+    height: 15vh;
+  }
+
+  article {
+    background-color: rgb(6, 48, 85);
+  }
+
+  aside {
+    color: white;
+    background-color: #320388;
+  }
 }
