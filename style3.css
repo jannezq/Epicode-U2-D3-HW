@@ -21,12 +21,10 @@ nav {
 }
 
 /* .side-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: stretch;
-    width: 100%;
-  } */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+} */
 
 h2 {
   padding-inline: 2%;
@@ -47,7 +45,6 @@ header {
 
 footer {
   display: flex;
-  flex-wrap: wrap;
   width: calc(185vh - 20%);
   height: 15vh;
   margin: 0;
@@ -58,16 +55,21 @@ footer {
 
 article {
   display: flex;
-  flex-grow: 1;
+  width: calc(185vh - 20%);
   align-content: stretch;
   margin-top: 0;
   color: #111023;
 }
 
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 aside {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 20%;
   color: white;
   background-color: #320388;
