@@ -22,12 +22,6 @@ h2 {
   min-height: 70vh;
 }
 
-/* article,
-aside,
-nav {
-  padding-inline: 2%;
-} */
-
 article {
   display: flex;
   flex-grow: 1;
